@@ -10,10 +10,42 @@ public class ProductApi {
 //    @GetMapping
 //    Użycie dodatkowego value ="/products" dodaje nam kolejnego "/" do drabinki, w tym wypadku adres do metody to http://localhost:8080/products/products
 //    @RequestMapping(value ="/products", method = RequestMethod.GET)
-    @RequestMapping(method = RequestMethod.GET)
-    public String getProducts(){
-        return "Hello world with GET";
+//    @RequestMapping(method = RequestMethod.GET)
+//    public String getProducts(){
+//        return "Hello world with GET";
+//    }
+
+//    Parametr
+//    @GetMapping
+//    public String getProducts(@RequestParam String name,@RequestParam(required = false, defaultValue = "") String surname){
+//        return "Hello "+name +" " + surname+"  with GET";
+//    }
+
+//    path
+//    @GetMapping("/{name}")
+//    public String getProducts(@PathVariable String name){
+//        return "Hello "+name+"  with GET";
+//    }
+
+//    Header
+//    @GetMapping
+//    public String getProducts(@RequestHeader String name){
+//        return "Hello "+name+"  with GET";
+//    }
+//    BOdy
+//    @GetMapping
+//    public String getProducts(@RequestBody String name){
+//        return "Hello "+name+"  with GET";
+//    }
+
+//    mix
+
+    @GetMapping
+    public String getProducts(@RequestParam String name,@RequestHeader(required = false, defaultValue = "d") String surname){
+        return "Hello "+name +" " + surname+"  with GET";
     }
+
+
 
 //    @PostMapping("/products")
     @PostMapping
