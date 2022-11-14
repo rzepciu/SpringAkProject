@@ -1,4 +1,4 @@
-package com.github.rzepciu.bonusTopics.mod3;
+package com;
 
 
 import org.springframework.boot.SpringApplication;

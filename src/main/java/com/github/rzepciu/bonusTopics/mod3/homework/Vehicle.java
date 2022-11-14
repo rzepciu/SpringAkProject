@@ -1,4 +1,4 @@
-package com.github.rzepciu.homework;
+package com.github.rzepciu.bonusTopics.mod3.homework;
 
 import org.hibernate.validator.constraints.UniqueElements;
 import org.springframework.hateoas.ResourceSupport;
