@@ -1,4 +1,4 @@
-package com.github.rzepciu.bonusTopics.mod3.homework;
+package com.github.rzepciu.bonusTopics.mod3.homework.model;
 
 import org.hibernate.validator.constraints.UniqueElements;
 import org.springframework.hateoas.ResourceSupport;
@@ -10,7 +10,6 @@ public class Vehicle extends ResourceSupport {
 
     @NotNull
     @Min(1)
-    @UniqueElements
     private long vehicleId;
     @NotNull
     private String mark;
