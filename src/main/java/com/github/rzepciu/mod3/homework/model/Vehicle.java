@@ -1,6 +1,5 @@
-package com.github.rzepciu.bonusTopics.mod3.homework.model;
+package com.github.rzepciu.mod3.homework.model;
 
-import org.hibernate.validator.constraints.UniqueElements;
 import org.springframework.hateoas.ResourceSupport;
 
 import javax.validation.constraints.Min;

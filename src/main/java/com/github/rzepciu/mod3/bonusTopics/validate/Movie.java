@@ -1,4 +1,4 @@
-package com.github.rzepciu.bonusTopics.mod3.validate;
+package com.github.rzepciu.mod3.bonusTopics.validate;
 
 import javax.validation.constraints.*;
 

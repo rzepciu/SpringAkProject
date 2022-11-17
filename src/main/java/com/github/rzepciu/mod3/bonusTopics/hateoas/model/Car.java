@@ -1,4 +1,4 @@
-package com.github.rzepciu.bonusTopics.mod3.hateoas.model;
+package com.github.rzepciu.mod3.bonusTopics.hateoas.model;
 
 import org.springframework.hateoas.ResourceSupport;
 

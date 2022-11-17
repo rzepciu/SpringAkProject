@@ -1,10 +1,8 @@
-package com.github.rzepciu.bonusTopics.mod3.homework;
+package com.github.rzepciu.mod3.homework;
 
-import com.github.rzepciu.bonusTopics.mod3.homework.model.Vehicle;
+import com.github.rzepciu.mod3.homework.model.Vehicle;
 import org.springframework.hateoas.Link;
 import org.springframework.stereotype.Service;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.ArrayList;
 import java.util.List;

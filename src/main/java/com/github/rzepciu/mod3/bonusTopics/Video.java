@@ -1,4 +1,4 @@
-package com.github.rzepciu.bonusTopics.mod3;
+package com.github.rzepciu.mod3.bonusTopics;
 
 public class Video {
 

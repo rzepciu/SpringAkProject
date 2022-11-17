@@ -1,8 +1,7 @@
-package com.github.rzepciu.bonusTopics.mod3.homework;
+package com.github.rzepciu.mod3.homework;
 
-import com.github.rzepciu.bonusTopics.mod3.homework.model.Vehicle;
+import com.github.rzepciu.mod3.homework.model.Vehicle;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.hateoas.Link;
 import org.springframework.hateoas.Resource;
 import org.springframework.hateoas.Resources;
 import org.springframework.http.HttpStatus;
@@ -10,7 +9,6 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;

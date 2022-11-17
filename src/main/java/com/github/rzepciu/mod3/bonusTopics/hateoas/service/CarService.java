@@ -1,6 +1,6 @@
-package com.github.rzepciu.bonusTopics.mod3.hateoas.service;
+package com.github.rzepciu.mod3.bonusTopics.hateoas.service;
 
-import com.github.rzepciu.bonusTopics.mod3.hateoas.model.Car;
+import com.github.rzepciu.mod3.bonusTopics.hateoas.model.Car;
 
 import java.util.List;
 import java.util.Optional;
