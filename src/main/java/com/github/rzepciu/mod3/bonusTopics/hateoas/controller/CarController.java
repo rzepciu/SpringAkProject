@@ -1,7 +1,7 @@
-package com.github.rzepciu.bonusTopics.mod3.hateoas.controller;
+package com.github.rzepciu.mod3.bonusTopics.hateoas.controller;
 
-import com.github.rzepciu.bonusTopics.mod3.hateoas.model.Car;
-import com.github.rzepciu.bonusTopics.mod3.hateoas.service.CarService;
+import com.github.rzepciu.mod3.bonusTopics.hateoas.model.Car;
+import com.github.rzepciu.mod3.bonusTopics.hateoas.service.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.Resource;
