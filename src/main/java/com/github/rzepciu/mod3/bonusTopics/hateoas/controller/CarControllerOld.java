@@ -21,28 +21,28 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 
 @RestController
 @RequestMapping (value = "/cars", produces = MediaType.APPLICATION_JSON_VALUE)
-public class CarController {
+public class CarControllerOld {
 
     private CarService carService;
 
     @Autowired
-    public CarController(CarService carService) {
+    public CarControllerOld(CarService carService) {
         this.carService = carService;
     }
 
 
     @GetMapping
     public ResponseEntity<Resources<Car>> getCars(){
-        Link link = linkTo(CarController.class).withSelfRel();
+        Link link = linkTo(CarControllerOld.class).withSelfRel();
         List<Car> allCars = carService.getAllCars();
-        allCars.forEach(car -> car.add(linkTo(CarController.class).slash(car.getCarId()).withSelfRel()));
+        allCars.forEach(car -> car.add(linkTo(CarControllerOld.class).slash(car.getCarId()).withSelfRel()));
         Resources<Car> carResource = new Resources<>(allCars,link);
         return new ResponseEntity(carResource, HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Resource<Car>> getCarById(@PathVariable long id){
-        Link link = linkTo(CarController.class).slash(id).withSelfRel().withSelfRel();
+        Link link = linkTo(CarControllerOld.class).slash(id).withSelfRel().withSelfRel();
 
         Optional<Car> carById = carService.getCarById(id);
 
@@ -54,9 +54,9 @@ public class CarController {
     @GetMapping("/color/{color}")
     public ResponseEntity<Resources<Car>> getCarByColor(@PathVariable String color){
         List<Car> carsByColor = carService.getCarsByColor(color);
-        carsByColor.forEach(car -> car.add(linkTo(CarController.class).slash(car.getColor()).withSelfRel()));
+        carsByColor.forEach(car -> car.add(linkTo(CarControllerOld.class).slash(car.getColor()).withSelfRel()));
 //        carsByColor.forEach(car -> car.add(linkTo(CarController.class).withRel("allColors")));
-        Link link = linkTo(CarController.class).withSelfRel();
+        Link link = linkTo(CarControllerOld.class).withSelfRel();
         Resources<Car> carResource = new Resources<>(carsByColor,link);
         return new ResponseEntity(carResource,HttpStatus.OK);
     }

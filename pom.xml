@@ -58,6 +58,11 @@
             <version>2.1.9.RELEASE</version>
         </dependency>
 
+<!--        mod4 thymeleaf-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
 
     </dependencies>
 
