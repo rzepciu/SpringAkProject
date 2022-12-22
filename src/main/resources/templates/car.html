@@ -8,9 +8,9 @@
 <H1>Kurs Spring</H1>
 <p>Hello Thymeleaf</p>
 <p></p>
-<p th:text="${name}"></p>
-<p th:text="${car.getMark()}"></p>
-<p th:text="${car.getModel()}"></p>
+<!--<p th:text="${name}"></p>-->
+<!--<p th:text="${car.getMark()}"></p>-->
+<!--<p th:text="${car.getModel()}"></p>-->
 
 <tr th:each="car:${cars}">
     <td th:text="${car.getMark()}"/>
@@ -19,6 +19,15 @@
     <br/>
     <p>---------------------------</p>
 </tr>
+<br>
+<br>
+<br>
+
+<form th:action="@{/add}" th:object="${newCar}" method="post">
+    <p> Model: <input type="text" th:field="*{model}"></p>
+    <p> Mark: <input type="text" th:field="*{mark}"></p>
+    <p><input type="submit" value="add new car"></p>
+</form>
 
 </body>
 </html>

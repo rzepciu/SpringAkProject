@@ -5,6 +5,9 @@ public class Car {
     private String model;
     private String mark;
 
+    public Car() {
+    }
+
     public Car(String mark, String model) {
         this.model = model;
         this.mark = mark;
@@ -24,5 +27,13 @@ public class Car {
 
     public void setMark(String mark) {
         this.mark = mark;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "model='" + model + '\'' +
+                ", mark='" + mark + '\'' +
+                '}';
     }
 }
